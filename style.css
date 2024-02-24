@@ -1,0 +1,100 @@
+:root
+{
+    margin: 0;
+    padding: 0;
+    border-style: border-box;
+
+    --main-color: white;
+    --main-font-family: Impact;
+}
+
+body
+{
+    background-color: white;
+    align-items: center;
+
+    margin: 0;
+    padding: 0;
+    border-style: border-box;
+}
+
+.Game_Title
+{
+    height: 10vh;
+
+    font-size: 7vh;
+    font-family: var(--main-font-family);
+    font-style: italic;
+    text-align: center;
+
+    background-color: blue;
+    border-bottom: 1vh solid black;
+}
+
+.centered-horizontal-container
+{
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
+    margin: 1vh;
+}
+
+.Gameboard
+{
+    height: 70vh;
+    min-width: 70vh;
+    overflow: auto;
+    background-color: black;
+    border-radius: 1vh;
+
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    gap: 1vh;
+    padding: 1vh;
+}
+
+.Gameboard_Cell
+{
+    min-height: 5vh;
+    background-color:white;
+    font-family: var(--main-font-family);
+    font-size: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Leaderboard_Title
+{
+    height: 4vh;
+    font-size: 4vh;
+    font-family: var(--main-font-family);
+    text-align: center;
+}
+
+.Leaderboard_Subtitle
+{
+    font-size: 2vh;
+    font-family: var(--main-font-family);
+    text-align: center;
+}
+
+.Leaderboard_Entries
+{
+    height: 49vh;
+    color: linear-gradient(red, blue);
+}
+
+.Leaderboard_Option
+{
+    height: 4vh;
+    background-color: blue;
+    border-radius: 1vh;
+    font-family: var(--main-font-family);
+    font-size: 3vh;
+    padding: 1vh;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+}
+
+
